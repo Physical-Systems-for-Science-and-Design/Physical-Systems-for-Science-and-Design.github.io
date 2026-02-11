@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Physical Systems for Science and Design — NeurIPS 2026 Workshop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <p class="hero-venue">NeurIPS 2026 Workshop</p>
+            <h1 class="hero-title">Physical Systems for<br>Science and Design</h1>
+            <p class="hero-subtitle">Principles and Methods for Scaling</p>
+            <div class="hero-meta">
+                <span class="meta-pill">📅 December 2026</span>
+                <span class="meta-pill">📍 Vancouver, BC</span>
+                <span class="meta-pill">🕘 Full Day</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav-bar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#speakers" class="nav-link">Speakers</a>
+            <a href="#schedule" class="nav-link">Schedule</a>
+            <a href="#cfp" class="nav-link">Call for Papers</a>
+            <a href="#organizers" class="nav-link">Organizers</a>
+        </div>
+    </nav>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <p>
+                    Physical simulation powers breakthroughs from protein dynamics and climate modeling to robotic
+                    control and metamaterial optimization.
+                    Yet a critical bottleneck persists: most high-fidelity physical methods struggle to <em>scale</em> —
+                    across resolutions,
+                    across the sim-to-real divide, and across the diversity of real-world phenomena.
+                </p>
+                <p>
+                    This workshop brings together researchers from <strong>machine learning</strong>,
+                    <strong>physics-based simulation</strong>,
+                    <strong>computer graphics</strong>, and <strong>computational design</strong> to examine the
+                    principles and methods
+                    that enable physical modeling to scale reliably.
+                </p>
+                <div class="axes-grid">
+                    <div class="axis-card">
+                        <div class="axis-icon">📐</div>
+                        <h3>Resolution Scaling</h3>
+                        <p>Maintain fidelity as spatial/temporal resolution increases — neural operators, reduced-order
+                            models, multi-scale solvers.</p>
+                    </div>
+                    <div class="axis-card">
+                        <div class="axis-icon">🌐</div>
+                        <h3>Domain Scaling</h3>
+                        <p>Generalize across geometries, materials, and boundary conditions — foundation models for
+                            physics, geometry-aware architectures.</p>
+                    </div>
+                    <div class="axis-card">
+                        <div class="axis-icon">🔬</div>
+                        <h3>Reality Scaling</h3>
+                        <p>Bridge the sim-to-real gap — differentiable simulation, domain randomization, system
+                            identification.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers -->
+    <section id="speakers" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Invited Speakers</h2>
+            <div class="speakers-grid">
+                <div class="speaker-card">
+                    <img src="images/zongyi_li.jpg" alt="Zongyi Li" class="speaker-photo">
+                    <h3>Zongyi Li</h3>
+                    <p class="speaker-affil">MIT / NYU</p>
+                    <p class="speaker-topic">Neural Operators for Physical Systems</p>
+                    <span class="status-badge confirmed">Confirmed</span>
+                </div>
+                <div class="speaker-card">
+                    <img src="images/bill_freeman.jpg" alt="Bill Freeman" class="speaker-photo">
+                    <h3>Bill Freeman</h3>
+                    <p class="speaker-affil">MIT</p>
+                    <p class="speaker-topic">Computational Imaging &amp; Physical Inference</p>
+                    <span class="status-badge tentative">Tentative</span>
+                </div>
+                <div class="speaker-card">
+                    <img src="images/mina_konakovic.png" alt="Mina Konaković Luković" class="speaker-photo">
+                    <h3>Mina Konaković Luković</h3>
+                    <p class="speaker-affil">MIT</p>
+                    <p class="speaker-topic">Computational Design &amp; Fabrication</p>
+                    <span class="status-badge tentative">Tentative</span>
+                </div>
+                <div class="speaker-card">
+                    <img src="images/rose_yu.jpg" alt="Rose Yu" class="speaker-photo">
+                    <h3>Rose Yu</h3>
+                    <p class="speaker-affil">UCSD</p>
+                    <p class="speaker-topic">Spatiotemporal Learning &amp; Physics-Informed ML</p>
+                    <span class="status-badge tentative">Tentative</span>
+                </div>
+                <div class="speaker-card">
+                    <img src="images/boris_kozinsky.jpg" alt="Boris Kozinsky" class="speaker-photo">
+                    <h3>Boris Kozinsky</h3>
+                    <p class="speaker-affil">Harvard</p>
+                    <p class="speaker-topic">Molecular Simulation &amp; ML Force Fields</p>
+                    <span class="status-badge tentative">Tentative</span>
+                </div>
+                <div class="speaker-card">
+                    <img src="images/kaiming_he.jpg" alt="Kaiming He" class="speaker-photo">
+                    <h3>Kaiming He</h3>
+                    <p class="speaker-affil">MIT</p>
+                    <p class="speaker-topic">Representation Learning &amp; Foundation Models</p>
+                    <span class="status-badge tentative">Tentative</span>
+                </div>
+                <div class="speaker-card">
+                    <img src="images/fei_sha.jpg" alt="Fei Sha" class="speaker-photo">
+                    <h3>Fei Sha</h3>
+                    <p class="speaker-affil">Meta</p>
+                    <p class="speaker-topic">Large-Scale Learning &amp; Generalization</p>
+                    <span class="status-badge tentative">Tentative</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule -->
+    <section id="schedule" class="section">
+        <div class="container">
+            <h2 class="section-title">Schedule</h2>
+            <p class="section-desc">Full-day workshop (~8 hours). All times are tentative.</p>
+            <div class="schedule-table">
+                <div class="schedule-row schedule-header">
+                    <span class="sched-time">Time</span>
+                    <span class="sched-event">Session</span>
+                    <span class="sched-format">Format</span>
+                </div>
+                <div class="schedule-row">
+                    <span class="sched-time">08:30 – 08:45</span>
+                    <span class="sched-event">Opening Remarks</span>
+                    <span class="sched-format">Organizers</span>
+                </div>
+                <div class="schedule-row talk">
+                    <span class="sched-time">08:45 – 09:25</span>
+                    <span class="sched-event">Invited Talk 1</span>
+                    <span class="sched-format">30 min + 10 min Q&amp;A</span>
+                </div>
+                <div class="schedule-row talk">
+                    <span class="sched-time">09:25 – 10:05</span>
+                    <span class="sched-event">Invited Talk 2</span>
+                    <span class="sched-format">30 min + 10 min Q&amp;A</span>
+                </div>
+                <div class="schedule-row break">
+                    <span class="sched-time">10:05 – 10:30</span>
+                    <span class="sched-event">☕ Coffee Break</span>
+                    <span class="sched-format"></span>
+                </div>
+                <div class="schedule-row">
+                    <span class="sched-time">10:30 – 11:30</span>
+                    <span class="sched-event">Contributed Spotlight Talks I</span>
+                    <span class="sched-format">6 × (7 min + 3 min Q&amp;A)</span>
+                </div>
+                <div class="schedule-row talk">
+                    <span class="sched-time">11:30 – 12:10</span>
+                    <span class="sched-event">Invited Talk 3</span>
+                    <span class="sched-format">30 min + 10 min Q&amp;A</span>
+                </div>
+                <div class="schedule-row break">
+                    <span class="sched-time">12:10 – 13:30</span>
+                    <span class="sched-event">🍽️ Lunch Break + Poster Session I</span>
+                    <span class="sched-format">Posters</span>
+                </div>
+                <div class="schedule-row talk">
+                    <span class="sched-time">13:30 – 14:10</span>
+                    <span class="sched-event">Invited Talk 4</span>
+                    <span class="sched-format">30 min + 10 min Q&amp;A</span>
+                </div>
+                <div class="schedule-row">
+                    <span class="sched-time">14:10 – 15:10</span>
+                    <span class="sched-event">Contributed Spotlight Talks II</span>
+                    <span class="sched-format">6 × (7 min + 3 min Q&amp;A)</span>
+                </div>
+                <div class="schedule-row break">
+                    <span class="sched-time">15:10 – 15:40</span>
+                    <span class="sched-event">☕ Coffee Break + Poster Session II</span>
+                    <span class="sched-format">Posters</span>
+                </div>
+                <div class="schedule-row talk">
+                    <span class="sched-time">15:40 – 16:20</span>
+                    <span class="sched-event">Invited Talk 5</span>
+                    <span class="sched-format">30 min + 10 min Q&amp;A</span>
+                </div>
+                <div class="schedule-row">
+                    <span class="sched-time">16:20 – 17:10</span>
+                    <span class="sched-event">Panel Discussion</span>
+                    <span class="sched-format">All speakers + organizers</span>
+                </div>
+                <div class="schedule-row">
+                    <span class="sched-time">17:10 – 17:30</span>
+                    <span class="sched-event">Closing Remarks &amp; Best Paper Awards</span>
+                    <span class="sched-format">Organizers</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call for Papers -->
+    <section id="cfp" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Call for Papers</h2>
+            <div class="cfp-content">
+                <p>We invite submissions of <strong>4-page extended abstracts</strong> (excluding references).
+                    Submissions are <strong>non-archival</strong> and managed through OpenReview.</p>
+
+                <div class="cfp-topics">
+                    <h3>Topics of Interest</h3>
+                    <ul>
+                        <li>Neural operators and surrogate models for physical systems</li>
+                        <li>Differentiable simulation and inverse design</li>
+                        <li>Foundation models for physics and scientific computing</li>
+                        <li>Sim-to-real transfer and domain adaptation</li>
+                        <li>Multi-scale and multi-physics methods</li>
+                        <li>Physics-informed machine learning</li>
+                        <li>Geometric and topological methods for physical modeling</li>
+                        <li>Benchmarks and evaluation for physical ML</li>
+                        <li>Applications in molecular dynamics, climate, robotics, materials, and design</li>
+                    </ul>
+                </div>
+
+                <div class="cfp-dates">
+                    <h3>Important Dates</h3>
+                    <div class="date-row"><span class="date-label">Submission Deadline</span><span
+                            class="date-value">TBD</span></div>
+                    <div class="date-row"><span class="date-label">Notification</span><span
+                            class="date-value">TBD</span></div>
+                    <div class="date-row"><span class="date-label">Camera Ready</span><span
+                            class="date-value">TBD</span></div>
+                    <div class="date-row"><span class="date-label">Workshop Date</span><span class="date-value">December
+                            2026</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizers -->
+    <section id="organizers" class="section">
+        <div class="container">
+            <h2 class="section-title">Organizers</h2>
+            <div class="organizers-grid">
+                <div class="organizer-card">
+                    <img src="images/minghao_guo.jpg" alt="Minghao Guo" class="org-photo">
+                    <h3><a href="https://www.minghaoguo.com/" target="_blank">Minghao Guo</a></h3>
+                    <p>MIT CSAIL</p>
+                </div>
+                <div class="organizer-card">
+                    <img src="images/haixu_wu.jpg" alt="Haixu Wu" class="org-photo">
+                    <h3><a href="https://wuhaixu2016.github.io/" target="_blank">Haixu Wu</a></h3>
+                    <p>MIT CSAIL</p>
+                </div>
+                <div class="organizer-card">
+                    <img src="images/zhiyang_dou.png" alt="Zhiyang Dou" class="org-photo">
+                    <h3><a href="https://frank-zy-dou.github.io/" target="_blank">Zhiyang Dou</a></h3>
+                    <p>MIT CSAIL</p>
+                </div>
+                <div class="organizer-card">
+                    <img src="images/peter_chen.jpg" alt="Peter Yichen Chen" class="org-photo">
+                    <h3><a href="https://peterchencyc.com/" target="_blank">Peter Yichen Chen</a></h3>
+                    <p>University of British Columbia</p>
+                </div>
+                <div class="organizer-card">
+                    <img src="images/chuang_gan.jpg" alt="Chuang Gan" class="org-photo">
+                    <h3><a href="https://people.csail.mit.edu/ganchuang/" target="_blank">Chuang Gan</a></h3>
+                    <p>UMass Amherst / MIT-IBM</p>
+                </div>
+                <div class="organizer-card">
+                    <img src="images/wuyang_chen.jpg" alt="Wuyang Chen" class="org-photo">
+                    <h3><a href="https://chenwydj.github.io/" target="_blank">Wuyang Chen</a></h3>
+                    <p>Simon Fraser University</p>
+                </div>
+                <div class="organizer-card">
+                    <img src="images/wojciech_matusik.jpg" alt="Wojciech Matusik" class="org-photo">
+                    <h3><a href="https://cdfg.mit.edu/wojciech" target="_blank">Wojciech Matusik</a></h3>
+                    <p>MIT CSAIL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Physical Systems for Science and Design — NeurIPS 2026 Workshop</p>
+            <p class="footer-contact">Contact: <a href="mailto:minghao@mit.edu">minghao@mit.edu</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Sticky nav
+        const nav = document.getElementById('navbar');
+        const navTop = nav.offsetTop;
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >= navTop) {
+                nav.classList.add('sticky');
+            } else {
+                nav.classList.remove('sticky');
+            }
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
