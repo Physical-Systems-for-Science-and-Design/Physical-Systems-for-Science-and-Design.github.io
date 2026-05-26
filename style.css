@@ -57,6 +57,13 @@ a:hover {
     color: var(--accent-light);
 }
 
+a:focus-visible,
+.nav-link:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 3px;
+}
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -107,34 +114,26 @@ a:hover {
 .hero-meta {
     display: flex;
     justify-content: center;
-    gap: 0;
     flex-wrap: wrap;
+    gap: 6px 22px;
 }
 
 .meta-pill {
     font-size: 0.86rem;
-    padding: 0 14px 0 0;
     color: var(--text-muted);
-}
-
-.meta-pill + .meta-pill {
-    border-left: 1px solid var(--border);
-    padding-left: 14px;
 }
 
 /* ===== Nav ===== */
 .nav-bar {
+    position: sticky;
+    top: 0;
     background: #ffffff;
     border-bottom: 1px solid var(--border);
     z-index: 100;
     transition: box-shadow 0.3s;
 }
 
-.nav-bar.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+.nav-bar.stuck {
     box-shadow: 0 1px 12px rgba(0, 0, 0, 0.06);
 }
 
@@ -258,12 +257,13 @@ a:hover {
     border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: 22px 20px;
-    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .axis-card:hover {
+    transform: translateY(-2px);
     border-color: var(--accent-border);
-    box-shadow: var(--shadow);
+    box-shadow: 0 4px 14px rgba(17, 24, 39, 0.05);
 }
 
 .axis-card h3 {
@@ -281,24 +281,27 @@ a:hover {
 
 /* ===== Speakers ===== */
 .speakers-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 18px;
     margin-top: 28px;
 }
 
 .speaker-card {
+    flex: 0 1 220px;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: 24px 18px;
     text-align: center;
-    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .speaker-card:hover {
+    transform: translateY(-2px);
     border-color: var(--accent-border);
-    box-shadow: var(--shadow);
+    box-shadow: 0 4px 14px rgba(17, 24, 39, 0.05);
 }
 
 .speaker-photo {
@@ -480,24 +483,27 @@ a:hover {
 
 /* ===== Organizers ===== */
 .organizers-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 18px;
     margin-top: 28px;
 }
 
 .organizer-card {
+    flex: 0 1 190px;
     text-align: center;
     padding: 24px 14px 20px;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .organizer-card:hover {
+    transform: translateY(-2px);
     border-color: var(--accent-border);
-    box-shadow: var(--shadow);
+    box-shadow: 0 4px 14px rgba(17, 24, 39, 0.05);
 }
 
 .org-photo {
@@ -606,11 +612,24 @@ a:hover {
         text-align: center;
     }
 
-    .speakers-grid {
-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    .speaker-card {
+        flex-basis: 160px;
     }
 
-    .organizers-grid {
-        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    .organizer-card {
+        flex-basis: 140px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
     }
 }
