@@ -8,7 +8,7 @@
     <title>Physical Systems for Science and Design — NeurIPS 2026 Workshop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,15 +17,14 @@
 
     <!-- Hero -->
     <header class="hero">
-        <div class="hero-bg"></div>
         <div class="container hero-content">
             <p class="hero-venue">NeurIPS 2026 Workshop</p>
             <h1 class="hero-title">Physical Systems for<br>Science and Design</h1>
             <p class="hero-subtitle">Principles and Methods for Scaling</p>
             <div class="hero-meta">
-                <span class="meta-pill">📅 December 2026</span>
-                <span class="meta-pill">📍 Vancouver, BC</span>
-                <span class="meta-pill">🕘 Full Day</span>
+                <span class="meta-pill">One day, Dec. 11–13, 2026</span>
+                <span class="meta-pill">Sydney / Paris / Atlanta</span>
+                <span class="meta-pill">Full day</span>
             </div>
         </div>
     </header>
@@ -38,6 +37,7 @@
             <a href="#schedule" class="nav-link">Schedule</a>
             <a href="#cfp" class="nav-link">Call for Papers</a>
             <a href="#organizers" class="nav-link">Organizers</a>
+            <a href="#sponsors" class="nav-link">Sponsors</a>
         </div>
     </nav>
 
@@ -47,11 +47,10 @@
             <h2 class="section-title">About</h2>
             <div class="about-content">
                 <p>
-                    Physical simulation powers breakthroughs from protein dynamics and climate modeling to robotic
-                    control and metamaterial optimization.
-                    Yet a critical bottleneck persists: most high-fidelity physical methods struggle to <em>scale</em> —
-                    across resolutions,
-                    across the sim-to-real divide, and across the diversity of real-world phenomena.
+                    Physical simulation underpins work from protein dynamics and climate modeling to robotic control
+                    and metamaterial optimization. But high-fidelity physical methods still struggle to
+                    <em>scale</em>: across spatial and temporal resolutions, across the sim-to-real divide, and
+                    across the diversity of real-world physical regimes.
                 </p>
                 <p>
                     This workshop brings together researchers from <strong>machine learning</strong>,
@@ -60,23 +59,23 @@
                     principles and methods
                     that enable physical modeling to scale reliably.
                 </p>
+                <figure class="scaling-figure">
+                    <img src="images/scaling_axes.svg" alt="Reliable physical modeling across resolution, domain, and reality scaling">
+                </figure>
                 <div class="axes-grid">
                     <div class="axis-card">
-                        <div class="axis-icon">📐</div>
                         <h3>Resolution Scaling</h3>
-                        <p>Maintain fidelity as spatial/temporal resolution increases — neural operators, reduced-order
-                            models, multi-scale solvers.</p>
+                        <p>Maintain fidelity as spatial/temporal resolution increases: neural operators,
+                            reduced-order models, multi-scale solvers.</p>
                     </div>
                     <div class="axis-card">
-                        <div class="axis-icon">🌐</div>
                         <h3>Domain Scaling</h3>
-                        <p>Generalize across geometries, materials, and boundary conditions — foundation models for
+                        <p>Generalize across geometries, materials, and boundary conditions: foundation models for
                             physics, geometry-aware architectures.</p>
                     </div>
                     <div class="axis-card">
-                        <div class="axis-icon">🔬</div>
                         <h3>Reality Scaling</h3>
-                        <p>Bridge the sim-to-real gap — differentiable simulation, domain randomization, system
+                        <p>Bridge the sim-to-real gap: differentiable simulation, domain randomization, system
                             identification.</p>
                     </div>
                 </div>
@@ -87,15 +86,9 @@
     <!-- Speakers -->
     <section id="speakers" class="section section-alt">
         <div class="container">
-            <h2 class="section-title">Invited Speakers</h2>
+            <h2 class="section-title">Invited Speaker Pool</h2>
+            <p class="section-desc centered">We plan five invited talks selected from the confirmed and tentative speaker pool below.</p>
             <div class="speakers-grid">
-                <div class="speaker-card">
-                    <img src="images/zongyi_li.jpg" alt="Zongyi Li" class="speaker-photo">
-                    <h3>Zongyi Li</h3>
-                    <p class="speaker-affil">MIT / NYU</p>
-                    <p class="speaker-topic">Neural Operators for Physical Systems</p>
-                    <span class="status-badge confirmed">Confirmed</span>
-                </div>
                 <div class="speaker-card">
                     <img src="images/bill_freeman.jpg" alt="Bill Freeman" class="speaker-photo">
                     <h3>Bill Freeman</h3>
@@ -108,14 +101,14 @@
                     <h3>Mina Konaković Luković</h3>
                     <p class="speaker-affil">MIT</p>
                     <p class="speaker-topic">Computational Design &amp; Fabrication</p>
-                    <span class="status-badge tentative">Tentative</span>
+                    <span class="status-badge confirmed">Confirmed</span>
                 </div>
                 <div class="speaker-card">
                     <img src="images/rose_yu.jpg" alt="Rose Yu" class="speaker-photo">
                     <h3>Rose Yu</h3>
                     <p class="speaker-affil">UCSD</p>
                     <p class="speaker-topic">Spatiotemporal Learning &amp; Physics-Informed ML</p>
-                    <span class="status-badge tentative">Tentative</span>
+                    <span class="status-badge confirmed">Confirmed</span>
                 </div>
                 <div class="speaker-card">
                     <img src="images/boris_kozinsky.jpg" alt="Boris Kozinsky" class="speaker-photo">
@@ -125,17 +118,17 @@
                     <span class="status-badge tentative">Tentative</span>
                 </div>
                 <div class="speaker-card">
+                    <img src="images/paris_perdikaris.jpg" alt="Paris Perdikaris" class="speaker-photo">
+                    <h3>Paris Perdikaris</h3>
+                    <p class="speaker-affil">University of Pennsylvania</p>
+                    <p class="speaker-topic">Physics-Informed ML, Neural Operators &amp; Uncertainty Quantification</p>
+                    <span class="status-badge confirmed">Confirmed</span>
+                </div>
+                <div class="speaker-card">
                     <img src="images/kaiming_he.jpg" alt="Kaiming He" class="speaker-photo">
                     <h3>Kaiming He</h3>
                     <p class="speaker-affil">MIT</p>
-                    <p class="speaker-topic">Representation Learning &amp; Foundation Models</p>
-                    <span class="status-badge tentative">Tentative</span>
-                </div>
-                <div class="speaker-card">
-                    <img src="images/fei_sha.jpg" alt="Fei Sha" class="speaker-photo">
-                    <h3>Fei Sha</h3>
-                    <p class="speaker-affil">Meta</p>
-                    <p class="speaker-topic">Large-Scale Learning &amp; Generalization</p>
+                    <p class="speaker-topic">Foundation Models &amp; Scaling for Physical Learning</p>
                     <span class="status-badge tentative">Tentative</span>
                 </div>
             </div>
@@ -170,7 +163,7 @@
                 </div>
                 <div class="schedule-row break">
                     <span class="sched-time">10:05 – 10:30</span>
-                    <span class="sched-event">☕ Coffee Break</span>
+                    <span class="sched-event">Coffee Break</span>
                     <span class="sched-format"></span>
                 </div>
                 <div class="schedule-row">
@@ -185,7 +178,7 @@
                 </div>
                 <div class="schedule-row break">
                     <span class="sched-time">12:10 – 13:30</span>
-                    <span class="sched-event">🍽️ Lunch Break + Poster Session I</span>
+                    <span class="sched-event">Lunch Break + Poster Session I</span>
                     <span class="sched-format">Posters</span>
                 </div>
                 <div class="schedule-row talk">
@@ -200,7 +193,7 @@
                 </div>
                 <div class="schedule-row break">
                     <span class="sched-time">15:10 – 15:40</span>
-                    <span class="sched-event">☕ Coffee Break + Poster Session II</span>
+                    <span class="sched-event">Coffee Break + Poster Session II</span>
                     <span class="sched-format">Posters</span>
                 </div>
                 <div class="schedule-row talk">
@@ -228,7 +221,10 @@
             <h2 class="section-title">Call for Papers</h2>
             <div class="cfp-content">
                 <p>We invite submissions of <strong>4-page extended abstracts</strong> (excluding references).
-                    Submissions are <strong>non-archival</strong> and managed through OpenReview.</p>
+                    Submissions are managed through OpenReview. Accepted contributions are
+                    <strong>non-archival</strong> and will not appear in proceedings. Previously published ML
+                    work, substantially finalized work already accepted elsewhere, and work presented at the NeurIPS
+                    main conference are not eligible.</p>
 
                 <div class="cfp-topics">
                     <h3>Topics of Interest</h3>
@@ -248,13 +244,13 @@
                 <div class="cfp-dates">
                     <h3>Important Dates</h3>
                     <div class="date-row"><span class="date-label">Submission Deadline</span><span
-                            class="date-value">TBD</span></div>
+                            class="date-value">August 29, 2026 AoE</span></div>
                     <div class="date-row"><span class="date-label">Notification</span><span
-                            class="date-value">TBD</span></div>
+                            class="date-value">September 28, 2026 AoE</span></div>
                     <div class="date-row"><span class="date-label">Camera Ready</span><span
-                            class="date-value">TBD</span></div>
-                    <div class="date-row"><span class="date-label">Workshop Date</span><span class="date-value">December
-                            2026</span></div>
+                            class="date-value">October 2026 TBD</span></div>
+                    <div class="date-row"><span class="date-label">Workshop Date</span><span class="date-value">One day during Dec.
+                            11–13, 2026, assigned by NeurIPS</span></div>
                 </div>
             </div>
         </div>
@@ -267,37 +263,42 @@
             <div class="organizers-grid">
                 <div class="organizer-card">
                     <img src="images/minghao_guo.jpg" alt="Minghao Guo" class="org-photo">
-                    <h3><a href="https://www.minghaoguo.com/" target="_blank">Minghao Guo</a></h3>
+                    <h3><a href="https://www.minghaoguo.com/" target="_blank" rel="noopener noreferrer">Minghao Guo</a></h3>
                     <p>MIT CSAIL</p>
                 </div>
                 <div class="organizer-card">
                     <img src="images/haixu_wu.jpg" alt="Haixu Wu" class="org-photo">
-                    <h3><a href="https://wuhaixu2016.github.io/" target="_blank">Haixu Wu</a></h3>
+                    <h3><a href="https://wuhaixu2016.github.io/" target="_blank" rel="noopener noreferrer">Haixu Wu</a></h3>
                     <p>MIT CSAIL</p>
                 </div>
                 <div class="organizer-card">
                     <img src="images/zhiyang_dou.png" alt="Zhiyang Dou" class="org-photo">
-                    <h3><a href="https://frank-zy-dou.github.io/" target="_blank">Zhiyang Dou</a></h3>
+                    <h3><a href="https://frank-zy-dou.github.io/" target="_blank" rel="noopener noreferrer">Zhiyang Dou</a></h3>
                     <p>MIT CSAIL</p>
                 </div>
                 <div class="organizer-card">
                     <img src="images/peter_chen.jpg" alt="Peter Yichen Chen" class="org-photo">
-                    <h3><a href="https://peterchencyc.com/" target="_blank">Peter Yichen Chen</a></h3>
+                    <h3><a href="https://peterchencyc.com/" target="_blank" rel="noopener noreferrer">Peter Yichen Chen</a></h3>
                     <p>University of British Columbia</p>
                 </div>
                 <div class="organizer-card">
                     <img src="images/chuang_gan.jpg" alt="Chuang Gan" class="org-photo">
-                    <h3><a href="https://people.csail.mit.edu/ganchuang/" target="_blank">Chuang Gan</a></h3>
+                    <h3><a href="https://people.csail.mit.edu/ganchuang/" target="_blank" rel="noopener noreferrer">Chuang Gan</a></h3>
                     <p>UMass Amherst / MIT-IBM</p>
                 </div>
                 <div class="organizer-card">
                     <img src="images/wuyang_chen.jpg" alt="Wuyang Chen" class="org-photo">
-                    <h3><a href="https://chenwydj.github.io/" target="_blank">Wuyang Chen</a></h3>
+                    <h3><a href="https://chenwydj.github.io/" target="_blank" rel="noopener noreferrer">Wuyang Chen</a></h3>
                     <p>Simon Fraser University</p>
                 </div>
                 <div class="organizer-card">
+                    <img src="images/zongyi_li.jpg" alt="Zongyi Li" class="org-photo">
+                    <h3><a href="https://zongyi-li.github.io/" target="_blank" rel="noopener noreferrer">Zongyi Li</a></h3>
+                    <p>MIT CSAIL / NYU</p>
+                </div>
+                <div class="organizer-card">
                     <img src="images/wojciech_matusik.jpg" alt="Wojciech Matusik" class="org-photo">
-                    <h3><a href="https://cdfg.mit.edu/wojciech" target="_blank">Wojciech Matusik</a></h3>
+                    <h3><a href="https://cdfg.mit.edu/wojciech" target="_blank" rel="noopener noreferrer">Wojciech Matusik</a></h3>
                     <p>MIT CSAIL</p>
                 </div>
             </div>
@@ -309,7 +310,7 @@
         <div class="container">
             <h2 class="section-title">Sponsors</h2>
             <div class="sponsors-grid">
-                <a href="https://www.foundrybio.ai/" target="_blank" class="sponsor-link">
+                <a href="https://www.foundrybio.ai/" target="_blank" rel="noopener noreferrer" class="sponsor-link">
                     <img src="images/foundry_logo.png" alt="Foundry BioSciences" class="sponsor-logo">
                 </a>
             </div>

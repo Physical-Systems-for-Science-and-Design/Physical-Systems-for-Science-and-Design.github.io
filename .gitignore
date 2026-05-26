@@ -1,0 +1,17 @@
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editor noise
+*~
+*.swp
+*.swo
+*.bak
+.idea/
+.vscode/
+
+# Node / build artifacts (in case anything is added later)
+node_modules/
+dist/
+build/
+.cache/
