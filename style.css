@@ -289,7 +289,8 @@ a:focus-visible,
 }
 
 .speaker-card {
-    flex: 0 1 220px;
+    flex: 0 0 220px;
+    width: 220px;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
@@ -324,14 +325,7 @@ a:focus-visible,
 .speaker-affil {
     font-size: 0.83rem;
     color: var(--text-light);
-    margin-bottom: 6px;
-}
-
-.speaker-topic {
-    font-size: 0.8rem;
-    color: var(--accent);
     margin-bottom: 12px;
-    line-height: 1.4;
 }
 
 .status-badge {
@@ -491,7 +485,8 @@ a:focus-visible,
 }
 
 .organizer-card {
-    flex: 0 1 190px;
+    flex: 0 0 190px;
+    width: 190px;
     text-align: center;
     padding: 24px 14px 20px;
     background: var(--surface);
